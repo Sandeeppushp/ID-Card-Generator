@@ -100,7 +100,7 @@ img.save(str(idno)+'.bmp')
 
 from PIL import Image
 til = Image.open(name+'.png')
-im = Image.open(str(idno)+'.bmp') #25x25
+im = Image.open(str(idno)+'.bmp')
 til.paste(im,(600,350))
 til.save(name+'.png')
 
