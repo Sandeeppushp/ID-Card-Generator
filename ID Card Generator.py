@@ -94,7 +94,7 @@ image.save(str(name)+'.png')
 
 
 import qrcode
-img = qrcode.make(str(company)+str(idno))   # this info. is added in QR code, also add other things
+img = qrcode.make(str(company)+str(idno))   # this info. is added in QR code, also add other things in str function
 img.save(str(idno)+'.bmp')
 
 
@@ -105,4 +105,4 @@ til.paste(im,(600,350))
 til.save(name+'.png')
 
 print('\n\n\nYour ID Card Successfully created in a PNG file '+name+'.png')
-input('\n\nPress any key to Close program...')
+input('\n\nPress any key to Close program...')   #use input yo hold the screen
