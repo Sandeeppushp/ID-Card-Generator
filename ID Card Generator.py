@@ -25,7 +25,7 @@ font = ImageFont.truetype('Roboto-Bold.ttf', size=80)
 draw.text((x, y), message, fill=color, font=font)
 
 
-# adding an unique id number. You can manually take it from user by input function
+# adding an unique id number. You can manually take it from user by input function.
 (x, y) = (600, 75)
 idno=random.randint(10000000,90000000)
 message = str('ID '+str(idno))
