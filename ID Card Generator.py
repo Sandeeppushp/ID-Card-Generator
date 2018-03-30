@@ -1,3 +1,4 @@
+# works on python 2.7, install modules as required to run
 from PIL import Image, ImageDraw, ImageFont
 image = Image.new('RGB', (1000,900), (255, 255, 255))
 draw = ImageDraw.Draw(image)
@@ -99,7 +100,7 @@ img.save(str(idno)+'.bmp')
 
 
 from PIL import Image
-til = Image.open(name+'.png')
+til = Image.open(name+'.png')       #open saved qr code and save it to final image
 im = Image.open(str(idno)+'.bmp')
 til.paste(im,(600,350))
 til.save(name+'.png')
