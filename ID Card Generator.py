@@ -87,7 +87,7 @@ draw.text((x, y), message, fill=color, font=font)
 
 
 
-# save the edited image
+# save the edited image in current directory.
  
 image.save(str(name)+'.png')
 
