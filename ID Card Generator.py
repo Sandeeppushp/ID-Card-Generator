@@ -1,7 +1,11 @@
 # works on python 2.7, install modules as required to run
+# pip install Pillow   for PIL module
 from PIL import Image, ImageDraw, ImageFont
+import qrcode
 image = Image.new('RGB', (1000,900), (255, 255, 255))
 draw = ImageDraw.Draw(image)
+
+# Change Roboto-Bold.ttf  to any other like Calibri, Its up to you
 font = ImageFont.truetype('Roboto-Bold.ttf', size=45)
 import random
 import os
@@ -94,7 +98,6 @@ image.save(str(name)+'.png')
 
 
 
-import qrcode
 img = qrcode.make(str(company)+str(idno))   # this info. is added in QR code, also add other things in str function
 img.save(str(idno)+'.bmp')
 
